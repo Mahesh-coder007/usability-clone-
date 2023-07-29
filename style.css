@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap");
+:root {
+  --accent-color: #1291ee;
+  --shadow-color: #163c53;
+  --primary-text-color: #577592;
+  --padding-inline: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+i {
+  color: var(--accent-color);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #183b56;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+h2 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+p {
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+}
+li {
+  color: #577592;
+  list-style: none;
+}
+a {
+  
+  text-decoration: none;
+}
+
+/* utility  classes */
+.small-bold-text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.container {
+  /* border: 2px solid black; */
+  max-width: 1186px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.hover-link {
+  color: #203f57;
+  transition: 0.2s ease-out;
+}
+.hover-link:hover {
+  color: #2bb3b1;
+}
+.secondary-btn {
+  color: #203f57;
+  border: 0.5px solid #203f57;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 12px 24px;
+  transition: 0.2s ease-out;
+}
+.secondary-btn:hover {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color) !important;
+}
+.primary-btn {
+  background-color: var(--accent-color);
+  font-weight: 700;
+  border-radius: 5px;
+  color: white !important;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--accent-color);
+  transition: 0.2s ease-out;
+}
+.primary-btn:hover {
+  background-color: #45638f;
+}
+
+/* top-Banner */
+
+.top-ban {
+  background-color: #e54796;
+  background-image: url(./assets/asset\ 32.png);
+  background-size: 300px;
+}
+.ban-content {
+  font-size: 0.9rem;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+/* header */
+
+.main-logo img {
+  width: 200px;
+  cursor: pointer;
+}
+.header {
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.nav-links ul {
+  justify-content: end;
+  gap: 40px;
+}
+
+/* hero section */
+
+.hero-section {
+  padding: 50px var(--padding-inline) 0;
+}
+.hero {
+  justify-content: center;
+  gap: 50px;
+}
+.left-items {
+  max-width: 40vw;
+}
+.left-items h1 {
+  margin-top: 30px;
+}
+.left-items p {
+  color: var(--primary-text-color);
+}
+.right-items img {
+  width: 600px;
+}
+.get-start-btn {
+  margin-top: 25px;
+  border: none;
+  box-shadow: none;
+}
+/* company-logos */
+
+.com-text {
+  margin-top: 80px;
+  text-align: center;
+}
+.com-img {
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.com-imgs {
+  height: 46px;
+}
+
+/* utilitis */
+
+.utilit {
+  background-image: url(./assets/asset\ 34.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 614px;
+  margin-block: 60px;
+  padding: 80px var(--padding-inline);
+}
+.utl-text {
+  justify-content: center;
+  flex-direction: column;
+}
+.utl-text h2 {
+  margin-bottom: 20px;
+}
+.utilitcards {
+  padding-inline: 90px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* margin-top: 30px;50px */
+  gap: 40px;
+}
+.utl {
+  flex-direction: column;
+  max-width: 30%;
+  gap: 15px;
+  text-align: center;
+}
+.utl-logo {
+  max-width: 30%;
+  min-width: 30%;
+  height: 40px;
+  width: 40px;
+}
+
+/* big-utilities */
+
+.b-util-left-img img {
+  width: 100%;
+}
+.big-utl {
+  /* margin-top: 20px; */
+  padding: 20px var(--padding-inline);
+}
+.b-util-main {
+  gap: 75px;
+}
+.b-util-right {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+}
+.logo-b-utl {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.phil {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+.eco {
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  color: white;
+  background-color: red;
+}
+
+/* cards section */
+
+.h2-font-cards {
+  font-size: 2rem;
+}
+
+/* imgges cards */
+.cards-section {
+  margin-block: 60px;
+}
+
+.main-cards {
+  margin-block: 30px;
+  gap: 25px;
+}
+.card {
+  width: 23%;
+  min-height: 320px;
+  position: relative;
+  transition: 0.2s ease-out;
+}
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+}
+.card1 {
+  background-color: black;
+  background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.8)),
+    url(./assets/asset\ 36.jpeg);
+  background-size: cover;
+}
+.card2 {
+  background-color: black;
+  background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.8)),
+    url(./assets/asset\ 37.jpeg);
+  background-size: cover;
+}
+.card3 {
+  background-color: black;
+  background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.8)),
+    url(./assets/asset\ 38.jpeg);
+  background-size: cover;
+}
+.card4 {
+  background-color: black;
+  background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.8)),
+    url(./assets/asset\ 39.jpeg);
+  background-size: cover;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px #888;
+}
+/* Template */
+
+.left-temp {
+  gap: 30px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.h2-temp {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: white;
+}
+
+.template {
+  width: 100%;
+  height: 621px;
+  background-color: #163c53;
+}
+.main-template {
+  padding-block: 5%;
+}
+.temp-h4 {
+  color: white;
+}
+.lists {
+  line-height: 2rem;
+  gap: 60px;
+}
+.temp-li {
+  margin-left: 13px;
+  color: white;
+  list-style-type: disc;
+}
+.right-temp-img1 {
+  width: 100%;
+}
+.right-temp-img2 {
+  /* width: 40%; */
+}
+
+
+.start-section{
+  margin-top: 7%;
+  margin-bottom: 5%;
+  flex-direction: column;
+}
+
+.start-h2{
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.para-div{
+  margin-block: 40px;
+}
+
+
+/* footer */
+
+.f-main{
+  padding: 5%;
+  background-color: #eaf3fa;
+}
+.footer-main{
+  line-height: 2rem;
+  justify-content: space-between;
+}
+.foot-logo{
+  align-self: flex-start;
+}
+
+/* footer-sub */
+
+.f-sub{
+  background-color: #b8cde5;
+}
+.sub-footer{
+  padding: 20px;
+  justify-content: center;
+  gap: 20px;
+}
